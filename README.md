@@ -28,6 +28,3 @@ This module is designed for D&D5e to add exhaustion and flanking rules, enhancin
 
 ## License
 Gritty Survival is released under the [MIT License](./LICENSE).
-
-## Contact
-For issues, please raise a bug in Github giving as much detail as you can. I will try and fix things as quickly as possible [https://github.com/zawkey2412/gritty-survival/issues](https://github.com/zawkey2412/gritty-survival/issues)
