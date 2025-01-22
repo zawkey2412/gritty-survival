@@ -1,0 +1,54 @@
+{
+  "combat-exhaustion": {
+    "settings": {
+      "enableMassiveDamageCheck": {
+        "name": "Enable Massive Damage Check",
+        "hint": "Enable the feature that triggers a Constitution saving throw and potential exhaustion when damage is greater than or equal to half the creature's max HP in a single hit."
+      },
+      "enableHealingFromZeroHP": {
+        "name": "Enable Healing from 0 HP",
+        "hint": "Enable the feature that adds a level of exhaustion when a creature is healed from 0 HP."
+      },
+      "enableMassiveDamageAtZeroHP": {
+        "name": "Enable Massive Damage at 0 HP",
+        "hint": "Enable the feature that triggers a death saving throw failure and potential exhaustion when a creature takes massive damage at 0 HP."
+      },
+      "baseSaveDC": {
+        "name": "Base Save DC",
+        "hint": "Define the base save DC for the saving throw."
+      },
+      "saveAbility": {
+        "name": "Saving Throw Ability",
+        "hint": "Select the ability used for the saving throw.",
+        "choices": {
+          "con": "Constitution",
+          "str": "Strength",
+          "dex": "Dexterity",
+          "int": "Intelligence",
+          "wis": "Wisdom",
+          "cha": "Charisma"
+        }
+      },
+      "enableFlanking": {
+        "name": "Enable Flanking",
+        "hint": "Enable the flanking rules."
+      },
+      "flankingBonusType": {
+        "name": "Flanking Bonus Type",
+        "hint": "Choose whether flanking provides a flat bonus or advantage.",
+        "choices": {
+          "flat": "Flat Bonus",
+          "advantage": "Advantage"
+        }
+      },
+      "flankingFlatBonus": {
+        "name": "Flanking Flat Bonus",
+        "hint": "Define the flat bonus for flanking if the flat bonus type is selected."
+      },
+      "enableFlankingExtraCheck": {
+        "name": "Enable Flanking Extra Check",
+        "hint": "Enable the extra check to ensure flanking is not applied if the target was just attacked by the flanking attacker."
+      }
+    }
+  }
+}

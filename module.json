@@ -1,0 +1,47 @@
+{
+  "id": "gritty-survival",
+  "title": "Gritty Survival",
+  "description": "A module for D&D5e that adds exhaustion and flanking rules to enhance the survival aspect of the game.",
+  "version": "1.0.0",
+  "library": false,
+  "manifestPlusVersion": "1.2.0",
+  "compatibility": {
+    "minimum": 11,
+    "verified": 11,
+    "maximum": 12
+  },
+  "authors": [
+    {
+      "name": "zawkey",
+      "url": "https://github.com/zawkey2412",
+      "discord": "zawkey"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": []
+  },
+  "esmodules": [
+    "scripts/main.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "url": "https://github.com/zawkey2412/gritty-survival",
+  "manifest": "https://github.com/zawkey2412/gritty-survival/releases/latest/download/module.json",
+  "download": "https://github.com/zawkey2412/gritty-survival/releases/latest/download/gritty-survival.zip",
+  "readme": "https://github.com/zawkey2412/gritty-survival/blob/master/README.md",
+  "changelog": "https://github.com/zawkey2412/gritty-survival/blob/master/CHANGELOG.md",
+  "license": "https://github.com/zawkey2412/gritty-survival/blob/master/LICENSE",
+  "bugs": "https://github.com/zawkey2412/gritty-survival/issues"
+}
