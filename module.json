@@ -40,7 +40,7 @@
     }
   ],
   "url": "https://github.com/zawkey2412/gritty-survival",
-  "manifest": "https://github.com/zawkey2412/gritty-survival/releases/latest/download/module.json",
+  "manifest": "https://github.com/zawkey2412/gritty-survival/releases/download/1.0.0/module.json",
   "download": "https://github.com/zawkey2412/gritty-survival/releases/download/1.0.0/module.zip",
   "readme": "https://github.com/zawkey2412/gritty-survival/blob/master/README.md",
   "changelog": "https://github.com/zawkey2412/gritty-survival/blob/master/CHANGELOG.md",
