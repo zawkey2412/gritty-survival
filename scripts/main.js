@@ -15,6 +15,8 @@ Hooks.on("updateActor", async (actor, updateData) => {
   if (!actor.hasPlayerOwner && !game.user.isGM) return;
 
   const hpValue = foundry.utils.getProperty(updateData, "system.attributes.hp.value");
+  if (hpValue === undefined) return; // Exit if HP value is not updated
+
   const prevHpValue = actor.getFlag(MODULE_ID, "previousHp") ?? foundry.utils.getProperty(actor, "system.attributes.hp.value");
   const maxHp = foundry.utils.getProperty(actor, "system.attributes.hp.max");
   const damageTaken = prevHpValue - hpValue;
@@ -50,8 +52,10 @@ Hooks.on("updateActor", async (actor, updateData) => {
     await updateExhaustion(actor, 1);
   }
 
-  // Update the previous HP value flag
-  await actor.setFlag(MODULE_ID, "previousHp", hpValue);
+  // Update the previous HP value flag only if it has changed
+  if (prevHpValue !== hpValue) {
+    await actor.setFlag(MODULE_ID, "previousHp", hpValue);
+  }
 });
 
 // Track the last attacker for flanking rules

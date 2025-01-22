@@ -1,4 +1,4 @@
-import { DEBUG_MODE } from "./main.js";
+import { DEBUG_MODE, MODULE_ID } from "./main.js";
 
 // Helper function to check if actor is in combat
 export function isActorInCombat(actor) {
@@ -70,7 +70,7 @@ export function isFlanked(target, attacker) {
   const attackers = game.combats.active.combatants.filter(combatant => {
     const actor = combatant.actor;
     if (!actor || actor.id === attacker.id || actor.id === target.id) return false;
-    if (actor.effects.some(e => e.data.disabled || e.data.label === "Incapacitated")) return false;
+    if (actor.effects.some(e => e.disabled || e.label === "Incapacitated")) return false;
     if (!actor.hasPlayerOwner) return false;
     if (actor.system.attributes.senses.blindsight || actor.system.attributes.senses.truesight) return false;
     if (enableFlankingExtraCheck && target.getFlag(MODULE_ID, "lastAttacker") === actor.id) return false;
