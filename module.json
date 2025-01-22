@@ -6,9 +6,9 @@
   "library": false,
   "manifestPlusVersion": "1.2.0",
   "compatibility": {
-    "minimum": 11,
-    "verified": 11,
-    "maximum": 12
+    "minimum": "0.8.0",
+    "verified": "11",
+    "maximum": "12"
   },
   "authors": [
     {
@@ -22,7 +22,9 @@
       {
         "id": "dnd5e",
         "type": "system",
-        "compatibility": {}
+        "compatibility": {
+          "minimum": "1.0.0"
+        }
       }
     ],
     "requires": []
